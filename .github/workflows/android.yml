@@ -19,7 +19,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-
+    - name: find gradlew
+      run: find / -type f -name "gradlew"
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
